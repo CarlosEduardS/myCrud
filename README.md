@@ -3,12 +3,14 @@
 Site basico para controlar banco de dados
 
 # COMANDO:
+
 pip install mysql-connector-python
 
 # SQL:
-CREATE DATABASE meu_banco;
 
-USE meu_banco;
+CREATE DATABASE escola;
+
+USE escola;
 
 CREATE TABLE alunos (
     id CHAR(36) DEFAULT (UUID()) PRIMARY KEY,

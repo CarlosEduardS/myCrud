@@ -7,7 +7,7 @@ def get_connection():
         host="localhost",
         user="root",
         password="",
-        database="meu_banco"
+        database="escola"
     )
 
 def carregar_lista():
