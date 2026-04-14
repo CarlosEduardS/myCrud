@@ -28,6 +28,10 @@ def inserir():
     if not nome or not idade or not turma:
         messagebox.showwarning("Aviso", "Preencha todos os campos!")
         return
+    
+    if not idade.isnumeric():
+        messagebox.showwarning("Aviso", "Idade deve ser um número!")
+        return
 
     try:
         conn = get_connection()
