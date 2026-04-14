@@ -84,6 +84,10 @@ def atualizar():
         messagebox.showwarning("Aviso", "Preencha todos os campos!")
         return
 
+    if not idade.isnumeric():
+        messagebox.showwarning("Aviso", "Idade deve ser um número!")
+        return
+
     try:
         conn = get_connection()
         cursor = conn.cursor()
